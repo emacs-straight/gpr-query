@@ -1,4 +1,4 @@
-;; gpr-query.el --- Minor mode for navigating sources using gpr_query  -*- lexical-binding:t -*-
+;;; gpr-query.el --- Minor mode for navigating sources using gpr_query  -*- lexical-binding:t -*-
 ;;
 ;; gpr-query supports Ada and any gcc language that supports the
 ;; AdaCore -fdump-xref switch (which includes C, C++).
@@ -1103,4 +1103,4 @@ FILE is from gpr-query."
 	     (cons 'gpr-query-ident-file gpr-query-ident-file-regexp-alist))
 
 (provide 'gpr-query)
-;;; end of file
+;;; gpr-query.el ends here

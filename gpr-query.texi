@@ -39,6 +39,12 @@ developing GNU and promoting software freedom.''
 
 gpr-query Version 1.0.1
 
+@menu
+* Overview::
+* Installation::
+* GNU Free Documentation License::
+@end menu
+
 @node Overview
 @chapter Overview
 
@@ -77,17 +83,7 @@ gprbuild; then you must use the toolchain assistant:
 alr toolchain --select --local
 @end example
 
-You can also install a compiler provided by Alire in an external
-directory, to be used outside Alire:
-@example
-alr toolchain --install --install-dir $HOME/.local gnat_native
-alr toolchain --install --install-dir $HOME/.local gprbuild
-@end example
-
-Then add the installed @code{bin} directories to your @code{PATH}.
-
-
-In any case, after installing the gpr-query ELPA package:
+After installing the gpr-query ELPA package:
 @example
 cd ~/.emacs.d/elpa/gpr-query-1.0.x
 ./build.sh
@@ -134,11 +130,10 @@ is available in Mingw64 as package
 
 @menu
 * Building GNATCOLL::
-* Building the executables::
 @end menu
 
 @node Building GNATCOLL
-@subsection Building GNATCOLL
+@section Building GNATCOLL
 
 The GNAT Community and GNAT pro binary installs have some of the
 GNATCOLL packages we need, but we need to install others from source.
